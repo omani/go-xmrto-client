@@ -2,7 +2,7 @@ GO XMR.TO Client
 ================
 
 <p align="center">
-<img src="https://github.com/omani/go-xmrto-client/raw/master/media/img/icon.png" alt="Logo" width="200" />
+<img src="https://github.com/omani/go-xmrto-client/raw/master/media/img/icon.png" alt="Logo" width="300" />
 </p>
 
 A client implementation for the [xmr.to](https://xmr.to) service written in go.
@@ -29,7 +29,7 @@ import (
 )
 
 func main() {
-	// initiate a new client.
+	// initiate a new client for the testnet
 	client := xmrto.New(&xmrto.Config{Testnet: true})
 
 	// here we check if we run the programm with a check parameter.
@@ -61,7 +61,7 @@ func main() {
 	// let's create an order with 0.001 btc.
 	createorder, err := client.CreateOrder(&xmrto.RequestCreateOrder{
 		BTCAmount:      .001,
-		BTCDestAddress: "2N5AYGnYKM7zgTe1n8P7mjUE3DavD1ub7Zs",
+		BTCDestAddress: "2N5AYGnYKM7zgTe1n8P7mjUE3DavD1ub7Zs", // this is the testnet btc address of xmr.to itself.
 	})
 	checkerr(err)
 
