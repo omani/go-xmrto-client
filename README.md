@@ -1,8 +1,11 @@
 GO XMR.TO Client
 ================
 
+[![GoDoc](https://godoc.org/github.com/monero-ecosystem/go-xmrto-client?status.svg)](https://godoc.org/github.com/monero-ecosystem/go-xmrto-client)
+
+
 <p align="center">
-<img src="https://github.com/omani/go-xmrto-client/raw/master/media/img/icon.png" alt="Logo" width="300" />
+<img src="https://github.com/monero-ecosystem/go-xmrto-client/raw/master/media/img/icon.png" alt="Logo" width="300" />
 </p>
 
 A client implementation for the [xmr.to](https://xmr.to) service written in go.
@@ -10,7 +13,7 @@ A client implementation for the [xmr.to](https://xmr.to) service written in go.
 ### Installation
 
 ```sh
-go get -u github.com/omani/go-xmrto-client
+go get -u github.com/monero-ecosystem/go-xmrto-client
 ```
 
 #### Example code:
@@ -25,7 +28,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/omani/go-xmrto-client"
+	"github.com/monero-ecosystem/go-xmrto-client"
 )
 
 func main() {
