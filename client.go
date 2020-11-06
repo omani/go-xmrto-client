@@ -59,12 +59,17 @@ func New(config *Config) Client {
 
 // Helper function
 func (c *client) do(method, path string, in, out interface{}) error {
-	payload, err := json.Marshal(in)
-	if err != nil {
-		return err
-	}
+	var payload []byte
+	var err error
 
-	endpoint, err := url.Parse(fmt.Sprintf("%s%s/%s", c.config.APIBaseAddress, c.config.APIVersion, c.config.APIConversionDirection))
+	payload = nil
+	if in != nil {
+		payload, err = json.Marshal(in)
+		if err != nil {
+			return err
+		}
+	}
+	endpoint, err := url.Parse(fmt.Sprintf("%s/%s/%s", c.config.APIBaseAddress, c.config.APIVersion, c.config.APIConversionDirection))
 	if err != nil {
 		return nil
 	}

@@ -5,13 +5,13 @@ import (
 )
 
 // APIBaseAddress is the base URL of the xmr.to API
-const APIBaseAddress = "https://xmr.to/api/"
+const APIBaseAddress = "https://xmr.to/api"
 
 // APITestnetBaseAddress is the base URL of the xmr.to TESTNET API
 const APITestnetBaseAddress = "https://test.xmr.to/api/"
 
-// APIVersion is the API version identifier (currently v2)
-const APIVersion = "v2"
+// APIVersion is the API version identifier (currently v3)
+const APIVersion = "v3"
 
 // APIConversionDirection is the API conversion direction (currently only xmr2btc)
 const APIConversionDirection = "xmr2btc"
