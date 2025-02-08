@@ -10,6 +10,9 @@ GO XMR.TO Client
 
 A client implementation for the [xmr.to](https://xmr.to) service written in go.
 
+# NOTICE
+The xmr.to service shut down long time ago. This repo has been archived.
+
 ### Installation
 
 ```sh
@@ -119,12 +122,9 @@ to check an order about its state
 * You can contribute with pull requests.
 
 # Donations
-I love Monero (XMR) and building applications for and on top of Monero.
-
-You can make me happy by donating Monero to the following address:
-
+You can make me happy by donating Bitcoin to the following address:
 ```
-89woiq9b5byQ89SsUL4Bd66MNfReBrTwNEDk9GoacgESjfiGnLSZjTD5x7CcUZba4PBbE3gUJRQyLWD4Akz8554DR4Lcyoj
+bc1qgezvfp4s0xme8pdv6aaqu9ayfgnv4mejdlv3tx
 ```
 
 # LICENSE
